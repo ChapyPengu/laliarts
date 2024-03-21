@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f1f2f6;
+}
+
+.bg-header {
+    background: linear-gradient(90deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../fondos/bg-header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.transition-hover-icon {
+    transition: color 0.3s ease;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px 32px;
+}
+
+@media (width < 640px) {
+    .grid-products {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+}
