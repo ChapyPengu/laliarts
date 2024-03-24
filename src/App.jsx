@@ -4,8 +4,6 @@ import Details from './pages/Details'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Page404 from './pages/404'
-import Header from './components/Header'
-import ProductDetails from './components/ProductDetails'
 
 function App() {
 
@@ -18,7 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/details/:name' element={<Details/>}/>
-            <Route path='/*' element={<Page404/>}/>
+            <Route path='*' element={<Page404/>}/>
           </Routes>
         </main>
       </div>

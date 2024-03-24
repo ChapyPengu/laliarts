@@ -15,7 +15,6 @@ function ProductDetails() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        console.log('hola mundo')
         const productFound = products.find(product => {
           return formatProductName(product.name) === formatProductName(name)
         })

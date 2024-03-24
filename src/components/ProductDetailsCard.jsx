@@ -6,8 +6,6 @@ function ProductDetailsCard({ product }) {
         price,
         description,
         stock,
-        ancho,
-        alto,
         image
     } = product
 
