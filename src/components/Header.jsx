@@ -7,7 +7,7 @@ function Header() {
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-16">
             <div className="">
-                <img className='w-full sm:w-[360px]' src="logos\logo-laliarts.png" alt="Logo LaliArts"/>
+                <img className='w-full sm:w-[360px]' src="/logos/logo-laliarts.png" alt="Logo LaliArts"/>
             </div>
             <div className="w-full sm:w-[360px] text-center">
                 <p className="text-lg">

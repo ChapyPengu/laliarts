@@ -19,7 +19,7 @@ function ProductCard({ product, showStock, className }) {
     const stockText = <p className={`text-center w-full font-light text-xs border block mx-auto px-2 py-0.5 rounded ${stockClass}`}>{ stock > 0 ? 'Stock' : 'Sin Stock' }</p>
 
   return (
-    <Link onClick={() => setNose(!nose)} to={`/details/${formatProductName(name)}`}>
+    <Link onClick={() => {setNose(!nose); window.scroll(0, 0)}} to={`/details/${formatProductName(name)}`}>
         <div className='w-full rounded-sm hover:shadow-md bg-white'>
             <div className=''>
                 <img className='w-full h-[180px] object-cover' src={image} alt={name} />
