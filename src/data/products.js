@@ -18,7 +18,8 @@ export default [
         color: " Natural, negro/ natural, azul, celeste",
         style: "Salpicado/Pintado",
         enamel: "Si",
-        image: "/products/tabla-irregular-y-dip-1.jfif"
+        image: "/products/tabla-irregular-y-dip-1.jfif",
+        extra: "/products/tabla-irregular-y-dip-2.jfif"
     },
     {
         name: "Set de Platos Irregulares",
@@ -28,7 +29,8 @@ export default [
         color: " Natural, azul",
         style: "Salpicado",
         enamel: "Si",
-        image: "/products/set-de-platos-irregulares.jfif"
+        image: "/products/set-de-platos-irregulares.jfif",
+        extra: ""
     },
     {
         name: "Frasco para Té",
@@ -38,7 +40,8 @@ export default [
         color: " Natural, verde",
         style: "Apliques",
         enamel: "Si",
-        image: "/products/frasco-para-te.jfif"
+        image: "/products/frasco-para-te.jfif",
+        extra: ""
     },
     {
         name: "Tarro Pequeño",
@@ -48,7 +51,8 @@ export default [
         color: "Natural, gris",
         style: "Salpicado",
         enamel: "Si",
-        image: "/products/tarro-pequenio.jfif"
+        image: "/products/tarro-pequenio.jfif",
+        extra: ""
     },
     {
         name: "Tazón Floreado",
@@ -58,7 +62,8 @@ export default [
         color: " natural, verde, morado / natural, amarillo, blanco / natural, verde, amarillo, blanco",
         style: "Apliques",
         enamel: "Si",
-        image: "/products/tazon-floreado-1.jfif"
+        image: "/products/tazon-floreado-1.jfif",
+        extra: "/products/tazon-floreado-2.jfif, /products/tazon-floreado-3.jfif"
     },
     {
         name: "Bandeja Corazón",
@@ -68,7 +73,8 @@ export default [
         color: "natural, verde, rojo / natural",
         style: "Pintado / Básico",
         enamel: "Si",
-        image: "/products/bandeja-corazon.jfif"
+        image: "/products/bandeja-corazon.jfif",
+        extra: ""
     },
     {
         name: "Ensaladera Frutal",
@@ -78,7 +84,8 @@ export default [
         color: " natural, amarillo, rojo, verde / azul, celeste / natural",
         style: "Pintado / Básico",
         enamel: "Si",
-        image: "/products/ensaladera-frutal-1.jfif"
+        image: "/products/ensaladera-frutal-1.jfif",
+        extra: "/products/ensaladera-frutal-2.jfif"
     },
     {
         name: "Casitas Decorativas",
@@ -88,7 +95,8 @@ export default [
         color: " natural",
         style: "Apliques / Básico",
         enamel: "Si / No",
-        image: "/products/casitas-decorativas.jfif"
+        image: "/products/casitas-decorativas.jfif",
+        extra: ""
     },
     {
         name: "Florero al Natural",
@@ -98,7 +106,8 @@ export default [
         color: " natural",
         style: "Básico",
         enamel: "Si",
-        image: "/products/florero-al-natural-2.png"
+        image: "/products/florero-al-natural-2.png",
+        extra: "/products/florero-al-natural-1.jpg"
     },
     {
         name: "Portavelas Azul",
@@ -108,7 +117,8 @@ export default [
         color: "Cian Oscuro (o simplemente azul para la etiqueta)",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/portavelas-azul.jfif"
+        image: "/products/portavelas-azul.jfif",
+        extra: ""
     },
     {
         name: "Azucarero floreado",
@@ -118,7 +128,8 @@ export default [
         color: "natural, verde, rojo, azul, morado",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/azucarero-floreado.png"
+        image: "/products/azucarero-floreado.png",
+        extra: ""
     },
     {
         name: "Jabonero de Cocina",
@@ -128,7 +139,8 @@ export default [
         color: "natural, verde",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/jabonero-de-cocina-1.png"
+        image: "/products/jabonero-de-cocina-1.png",
+        extra: "/products/jabonero-de-cocina-2.png"
     },
     {
         name: "Porta-Difusor",
@@ -138,7 +150,8 @@ export default [
         color: "natural / natural, negro",
         style: "Básico / Pintado",
         enamel: "Si",
-        image: "/products/porta-difusor-2.png"
+        image: "/products/porta-difusor-2.png",
+        extra: "/products/porta-difusor-1.png"
     },
     {
         name: "Portavelas Estrellado",
@@ -148,7 +161,8 @@ export default [
         color: "natural",
         style: "Básico",
         enamel: "Si",
-        image: "/products/portavelas-estrellado.jfif"
+        image: "/products/portavelas-estrellado.jfif",
+        extra: ""
     },
     {
         name: "Taza de Personaje",
@@ -158,7 +172,8 @@ export default [
         color: "Natural, negro, amarillo, blanco",
         style: "Pintado, Calco",
         enamel: "Si",
-        image: "/products/taza-de-personajes.jfif"
+        image: "/products/taza-de-personajes.jfif",
+        extra: ""
     },
     {
         name: "Jarrita",
@@ -168,7 +183,8 @@ export default [
         color: "Natural",
         style: "Básico",
         enamel: "Si",
-        image: "/products/jarrita.jfif"
+        image: "/products/jarrita.jfif",
+        extra: ""
     },
     {
         name: "Taza rústica",
@@ -178,7 +194,8 @@ export default [
         color: "Natural, marron",
         style: "Apliques / Pintado",
         enamel: "Si",
-        image: "/products/tazitas-rusticas.jfif"
+        image: "/products/tazitas-rusticas.jfif",
+        extra: ""
     },
     {
         name: "Porta-Utensilios Multiusos",
@@ -188,7 +205,8 @@ export default [
         color: "Natural",
         style: "Basico",
         enamel: "Si",
-        image: "/products/portautensilios-multifunciones.jfif"
+        image: "/products/portautensilios-multifunciones.jfif",
+        extra: ""
     },
     {
         name: "Portavelas pequeña",
@@ -198,7 +216,8 @@ export default [
         color: "Natural",
         style: "Básico",
         enamel: "Si",
-        image: "/products/portavelas-chiquitas.jfif"
+        image: "/products/portavelas-chiquitas.jfif",
+        extra: ""
     },
     {
         name: "Bandeja Pequeña",
@@ -208,7 +227,8 @@ export default [
         color: "Natural",
         style: "Basico",
         enamel: "Si",
-        image: "/products/bandeja-chiquita.jfif"
+        image: "/products/bandeja-chiquita.jfif",
+        extra: ""
     },
     {
         name: "Huevera",
@@ -218,7 +238,8 @@ export default [
         color: "Natural, negro",
         style: "Salpicado",
         enamel: "Si",
-        image: "/products/huevera.jfif"
+        image: "/products/huevera.jfif",
+        extra: ""
     },
     {
         name: "Vasito Rústico",
@@ -228,7 +249,8 @@ export default [
         color: "Natural, rosa",
         style: "Básico, pintado",
         enamel: "Si",
-        image: "/products/vasitos-rusticos.jfif"
+        image: "/products/vasitos-rusticos.jfif",
+        extra: ""
     },
     {
         name: "Platitos Naturales",
@@ -238,7 +260,8 @@ export default [
         color: "Natural, azul / natural, verde, amarillo",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/platitos-naturales.jfif"
+        image: "/products/platitos-naturales.jfif",
+        extra: ""
     },
     {
         name: "Bandeja Floreada",
@@ -248,7 +271,8 @@ export default [
         color: "Natural, amarillo / natural, verde, morado / natural",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/bandeja-floreada.jfif"
+        image: "/products/bandeja-floreada.jfif",
+        extra: ""
     },
     {
         name: "Taza Navideña",
@@ -258,7 +282,8 @@ export default [
         color: "Natural, verde, blanco, marrón, rojo",
         style: "Apliques, pintado",
         enamel: "Si",
-        image: "/products/taza-navidena.jfif"
+        image: "/products/taza-navidena.jfif",
+        extra: ""
     },
     {
         name: "Bowl Palta",
@@ -268,6 +293,7 @@ export default [
         color: "Natural, verde, marrón",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/bowl-palta.jfif"
+        image: "/products/bowl-palta.jfif",
+        extra: ""
     }
 ]
