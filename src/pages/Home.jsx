@@ -13,13 +13,18 @@ function Home() {
     <>
       <Header/>
       <div className='h-24'></div>
-      <Filter products={products} setProducts={setRenderProducts}/>
       <div className='h-12'></div>
-      <div className='w-full grid-products px-4 sm:px-0'>
-        {
-          redenderProducts.map((product, index) => <ProductCard key={index} product={product} showStock={true}/>)
-        }
+      <div className='flex flex-col xl:flex-row gap-6'>
+        <div>
+          <Filter products={products} setProducts={setRenderProducts}/>
+        </div>
+        <div className='w-full grid-products px-4 sm:px-0'>
+          {
+            redenderProducts.map((product, index) => <ProductCard key={index} product={product} showStock={true}/>)
+          }
+        </div>
       </div>
+      
     </>
   )
 }

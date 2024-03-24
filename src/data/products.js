@@ -8,7 +8,7 @@ export default [
         style: "Pintado",
         enamel: "Si",
         image: "/products/plato-grande-floral-1.jfif",
-        extra: "/products/plato-grande-floral-2.jfif, "
+        extra: "/products/plato-grande-floral-2.jfif"
     },
     {
         name: "Tabla Irregular y Dip",

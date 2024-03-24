@@ -6,7 +6,10 @@ function ProductDetailsCard({ product }) {
         price,
         description,
         stock,
-        image
+        image,
+        color,
+        style,
+        enamel
     } = product
 
   return (
@@ -19,6 +22,10 @@ function ProductDetailsCard({ product }) {
                 <li className="text-sm font-extrabold font-madmi uppercase">{ name }</li>
                 <li className="text-lg text-zinc-900">{ `$${price}` }</li>
                 <li className="w-[18rem] mx-auto text-xs">{ description }</li>
+                <li className="w-[18rem] mx-auto text-xs">color: { color }</li>
+                <li className="w-[18rem] mx-auto text-xs">estilo: { style }</li>
+                <li className="w-[18rem] mx-auto text-xs">esmalte: { enamel }</li>
+
             </ul>
         </div>
     </div>   
