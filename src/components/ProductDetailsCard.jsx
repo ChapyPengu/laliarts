@@ -17,7 +17,7 @@ function ProductDetailsCard({ product }) {
         <div className="px-4 py-6">
             <ul className="flex flex-col gap-3 text-center">
                 <li className="text-sm font-semibold uppercase">{ name }</li>
-                <li className="text-base">${ price }</li>
+                <li className="text-base">{ `${price}` }</li>
                 <li className="text-xs">{ description }</li>
                 <li className="text-sm border border-zinc-800 rounded" >Unidades Disponibles: { stock }</li>
             </ul>
