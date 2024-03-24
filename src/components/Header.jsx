@@ -12,7 +12,7 @@ function Header() {
             <div className="w-full sm:w-[360px] text-center">
                 <p className="text-lg">
                     Buenas! Soy Lali, hago productos ceramicos de forma artesanal. Cuento con stock
-                    y los realizo a pedido.
+                    y realizo los pedido.
                 </p>
             </div>
         </div>

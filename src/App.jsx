@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Page404 from './pages/404'
 import Header from './components/Header'
+import ProductDetails from './components/ProductDetails'
 
 function App() {
 

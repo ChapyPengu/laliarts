@@ -1,33 +1,32 @@
+import { formatProductName } from '../helpers/products'
+import { Route, Routes, useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { UseApp } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
-function ProductDetails({ product }) {
-    const {
-        name,
-        price,
-        description,
-        stock,
-        ancho,
-        alto,
-        image
-    } = product
 
-    function onClick() {
-        alert('Tu mama')
-    }
+import ProductDetailsCard from "./ProductDetailsCard"
+
+function ProductDetails() {
+
+    const { name } = useParams()
+    const { products } = UseApp()
+    const [product, setProduct] = useState({})
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        console.log('hola mundo')
+        const productFound = products.find(product => {
+          return formatProductName(product.name) === formatProductName(name)
+        })
+        if (!productFound) {
+            navigate('/')
+        }
+        setProduct(productFound)
+    }, [])
 
   return (
-    <div className="flex w-[28rem] mx-auto shadow-lg bg-white">
-        <div>
-            <img className="w-[24rem] h-[18rem] object-cover" src={image} alt='hola' />
-        </div>
-        <div className="px-4 py-6">
-            <ul className="flex flex-col gap-3 text-center">
-                <li className="text-sm font-semibold uppercase">{ name }</li>
-                <li className="text-base">${ price }</li>
-                <li className="text-xs">{ description }</li>
-                <li className="text-sm border border-zinc-800 rounded" >Unidades Disponibles: { stock }</li>
-            </ul>
-        </div>
-    </div>
+    <ProductDetailsCard product={product}/>
   )
 }
 

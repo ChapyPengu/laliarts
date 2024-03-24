@@ -20,7 +20,7 @@ body {
 .grid-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 64px 32px;
+    gap: 32px 16px;
 }
 
 @media (width < 640px) {
@@ -28,4 +28,31 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 32px;
     }
+}
+
+.arrow-carrousel {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1000;
+    min-width: 42px;
+    min-height: 42px;
+    outline: none;
+    border-radius: 100%;
+    /* padding: 4px; */
+}
+
+.arrow-carrousel:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.arrow-right {
+    right: calc(4% + 1px);    
+}
+
+.arrow-left {
+    left: calc(4% + 1px);    
+}
+
+.btn {
+    transition: background .3s ease;
 }

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#82d2ec'
+        'primary': '#82d2ec',
+        'secondary': '#82a0ff'
       },
       fontFamily: {
         'berk': ['Berkshire Swash'],
