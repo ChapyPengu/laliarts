@@ -20,12 +20,12 @@ function ProductCard({ product, showStock, className }) {
 
   return (
     <Link onClick={() => {setNose(!nose); window.scroll(0, 0)}} to={`/details/${formatProductName(name)}`}>
-        <div className='w-full rounded-sm hover:shadow-md bg-white'>
+        <div className='w-full rounded-sm hover:shadow-md bg-white font-madmi'>
             <div className=''>
                 <img className='w-full h-[180px] object-cover' src={image} alt={name} />
             </div>
             <div className='flex flex-col gap-2  px-4 py-4'>
-                <h2 className='text-sm h-min overflow-hidden font-semibold uppercase'>{ name }</h2>
+                <h2 className='text-sm h-min overflow-hidden font-medium uppercase'>{ name }</h2>
                 <p className='text-base text-zinc-800'>${ price }</p>
                 <p className='line-clamp-1 text-zinc-600 font-light mb-2 text-[0.7rem] overflow-hidden text-ellipsis'>{ description }</p>
                 {

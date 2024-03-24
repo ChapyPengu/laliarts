@@ -7,7 +7,8 @@ export default [
         color: "Natural, verde, amarillo, blanco/ natural, verde, azul, rosa",
         style: "Pintado",
         enamel: "Si",
-        image: "/products/plato-grande-floral-1.jfif"
+        image: "/products/plato-grande-floral-1.jfif",
+        extra: "/products/plato-grande-floral-2.jfif, "
     },
     {
         name: "Tabla Irregular y Dip",

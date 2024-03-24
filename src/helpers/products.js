@@ -2,10 +2,6 @@ export function formatProductName(productName) {
     return productName.replaceAll(' ', '-').toLocaleLowerCase()
 }
 
-export function formatProductPrice(productPrice) {
-    
-}
-
 export function orderAsc(products) {
     const res = [...products]
     let aux
@@ -34,4 +30,24 @@ export function orderDesc(products) {
         }
     }
     return res
+}
+
+export function getMaxPrice(products) {
+    let max = 0
+    for (const p of products) {
+        if (p.price >= max) {
+            max = p.price
+        }
+    }
+    return max
+}
+
+export function getMinPrice(products) {
+    let min = getMaxPrice(products)
+    for (const p of products) {
+        if (p.price <= min) {
+            min = p.price
+        }
+    }
+    return min
 }
