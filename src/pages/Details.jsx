@@ -3,6 +3,7 @@ import ProductDetails from '../components/ProductDetails'
 import ProductCard from '../components/ProductCard'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { Outlet, Route, Routes } from 'react-router-dom'
 
 const responsive = {
   superLargeDesktop: {
@@ -50,7 +51,7 @@ function Details() {
   return (
     <div className='flex flex-col gap-24'>
       <div>
-        <ProductDetails/>
+        <Outlet/>
       </div>
       <Carousel customLeftArrow={<CustomLeftArrow/>} customRightArrow={<CustomRightArrow />} responsive={responsive}>
         {

@@ -4,6 +4,7 @@ import Details from './pages/Details'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Page404 from './pages/404'
+import ProductDetails from './components/ProductDetails'
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/details/:name' element={<Details/>}/>
+            <Route path='/details' element={<Details/>}>
+              <Route path=':name' element={<ProductDetails/>}/>
+            </Route>
             <Route path='*' element={<Page404/>}/>
           </Routes>
         </main>

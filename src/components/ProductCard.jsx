@@ -1,8 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { formatProductName } from '../helpers/products'
+import { UseApp } from '../context/AppContext'
 
 function ProductCard({ product, showStock, className }) {
+
+    const { nose, setNose } = UseApp()
+
     const {
         name,
         price,
@@ -15,7 +19,7 @@ function ProductCard({ product, showStock, className }) {
     const stockText = <p className={`text-center w-full font-light text-xs border block mx-auto px-2 py-0.5 rounded ${stockClass}`}>{ stock > 0 ? 'Stock' : 'Sin Stock' }</p>
 
   return (
-    <Link to={`/details/${formatProductName(name)}`}>
+    <Link onClick={() => setNose(!nose)} to={`/details/${formatProductName(name)}`}>
         <div className='w-full rounded-sm hover:shadow-md bg-white'>
             <div className=''>
                 <img className='w-full h-[180px] object-cover' src={image} alt={name} />

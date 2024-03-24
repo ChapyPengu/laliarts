@@ -11,11 +11,14 @@ export function UseApp() {
 
 export function AppContextProvider({ children }) {
     const [products, setProducts] = useState(productsList)
+    const [nose, setNose] = useState(false)
 
   return (
     <AppContext.Provider value={{
         products,
-        setProducts
+        setProducts,
+        nose,
+        setNose
     }}>
         { children }
     </AppContext.Provider>
