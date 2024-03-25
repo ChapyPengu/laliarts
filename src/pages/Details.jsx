@@ -49,11 +49,15 @@ function Details() {
     const { products } = UseApp()
 
   return (
-    <div className='flex flex-col gap-24'>
+    <div className='flex flex-col gap-8'>
       <div>
         <Outlet/>
       </div>
-      <Carousel customLeftArrow={<CustomLeftArrow/>} customRightArrow={<CustomRightArrow />} responsive={responsive}>
+      <div className='mt-4 px-4 py-2 border-b-4 border-primary'>
+        <h2 className='font-berk text-xl text-primary font-semibold'>Otros Productos</h2>
+
+      </div>
+      <Carousel className='' customLeftArrow={<CustomLeftArrow/>} customRightArrow={<CustomRightArrow />} responsive={responsive}>
         {
           products.map((p, i) => {
             return <div key={i} className='mx-2'>

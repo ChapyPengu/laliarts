@@ -71,7 +71,7 @@ function ProductDetailsCard({ product }) {
     }
 
   return (
-    <div className="flex flex-col xl:flex-row w-full xl:w-[1080px] mx-auto xl:gap-8 bg-zinc-200 p-6 rounded-lg">
+    <div className="flex flex-col xl:flex-row max-w-max xl:w-[1080px] mx-auto xl:gap-8 bg-zinc-200 p-6 rounded-lg">
         <Carousel infinite className="w-full sm:w-[24rem] h-[18rem]" customLeftArrow={<CustomLeftArrow/>} customRightArrow={<CustomRightArrow/>} responsive={responsive}>
             {
                 getImgages().map((path, i) => {
