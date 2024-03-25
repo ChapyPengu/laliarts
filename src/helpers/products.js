@@ -2,6 +2,10 @@ export function formatProductName(productName) {
     return productName.replaceAll(' ', '-').toLocaleLowerCase()
 }
 
+export function formatProductPrice(price) {
+    return new Intl.NumberFormat('es-CL').format(price)
+}
+
 export function orderAsc(products) {
     const res = [...products]
     let aux

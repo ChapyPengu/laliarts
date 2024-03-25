@@ -24,7 +24,10 @@ function Filter({ products, setProducts }) {
   return (
     <div className='font-madmi w-full xl:w-[220px] text-xs font-light'>
       <div className={`flex justify-end w-full px-4 ${hidden ? '' : 'hidden'}`}>
-        <button className='xl:hidden bg-primary font-berk text-base text-white px-2 py-1 rounded-sm shadow-sm' onClick={() => setHidden(!hidden)}>Filtrar</button>
+        <button className='flex items-center justify-center gap-1 xl:hidden bg-primary font-berk text-base text-white px-2 py-1 rounded-sm shadow-sm' onClick={() => setHidden(!hidden)}>
+          Filtrar
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
       <div className='hidden xl:flex flex-col gap-4'>
           <div className='flex flex-col gap-2'>
@@ -39,7 +42,7 @@ function Filter({ products, setProducts }) {
           <button onClick={onFilterProducts} className='btn text-white bg-primary px-4 py-1 rounded-md shadow-md outline-none hover:bg-secondary'>Aplicar</button>
       </div>
 
-      <div className={`flex flex-col items-center justify-center gap-6 bg-white absolute w-full h-1/2 p-6 ${hidden ? 'hidden' : ''}`}>
+      <div className={`z-full shadow-2xl flex flex-col items-center justify-center gap-6 bg-white absolute w-full h-1/2 p-6 ${hidden ? 'hidden' : ''}`}>
           <div className='flex flex-col gap-2 w-full'>
               <p>Precio Maximo: { `$ ${rangeValue}` }</p>
               <input className='w-full outline-none cursor-pointer' onChange={(e) => { setRangeValue(e.target.value) }} type="range" min={getMinPrice(products)} max={getMaxPrice(products)} step={500} defaultValue={getMaxPrice(products)} />
@@ -54,8 +57,7 @@ function Filter({ products, setProducts }) {
             <i className="fa-solid fa-xmark text-red-600 text-xl"></i>
           </button>
       </div>
-
-
+      <div className={!hidden ? 'shadow-app' : ''}></div>
     </div>
   )
 }
